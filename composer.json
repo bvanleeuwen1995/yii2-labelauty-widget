@@ -1,0 +1,16 @@
+{
+  "name": "bvanleeuwen1995/yii2-labelauty-widget",
+  "description": "Yii2 widget for the label auty widget style checkboxes",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kristoffer Brabrand",
+      "email": "kristoffer@brabrand.no"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "bvanleeuwen1995/labelauty": "src"
+    }
+  }
+}
