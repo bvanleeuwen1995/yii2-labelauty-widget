@@ -8,9 +8,12 @@
       "email": "kristoffer@brabrand.no"
     }
   ],
+  "require": {
+      "bower-asset/labelauty": "*",
+  },
   "autoload": {
     "psr-0": {
-      "bvanleeuwen1995/labelauty": "src"
+      "bvanleeuwen1995/labelauty": ""
     }
   }
 }
