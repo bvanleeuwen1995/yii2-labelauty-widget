@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-      "bower-asset/labelauty": "*",
+      "bower-asset/labelauty": "*"
   },
   "autoload": {
     "psr-0": {
