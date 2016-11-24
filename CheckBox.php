@@ -2,6 +2,7 @@
 
 namespace bvanleeuwen1995\labelauty;
 
+use yii\bootstrap\Html;
 use yii\bootstrap\InputWidget;
 use yii\helpers\Json;
 
@@ -11,12 +12,32 @@ class Checkbox extends InputWidget {
      */
     public $clientOptions = [];
 
+    public $checked = false;
+
     /**
      * @inheritdoc
      */
     public function run() {
+        // Render the HTML content this extension required
+        echo $this->_renderHtmlContent();
+
         // Register the client script
         $this->_registerClientScript();
+    }
+
+    private function _renderHtmlContent() {
+        // Set the empty HTML string
+        $sHtml = '';
+
+        // Check if we have a model
+        if ($this->hasModel()) {
+            $sHtml .= Html::activeCheckbox($this->model, $this->attribute, $this->options);
+        } else {
+            $sHtml .= Html::checkbox($this->name, $this->checked, $this->options);
+        }
+
+        // Return the output
+        return $sHtml;
     }
 
     /**
