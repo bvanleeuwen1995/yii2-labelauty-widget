@@ -12,8 +12,8 @@
       "bower-asset/labelauty": "*"
   },
   "autoload": {
-    "psr-0": {
-      "bvanleeuwen1995/labelauty": ""
+    "psr-4": {
+      "bvanleeuwen1995\\labelauty\\": ""
     }
   }
 }
