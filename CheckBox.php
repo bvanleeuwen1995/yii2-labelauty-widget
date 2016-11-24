@@ -31,8 +31,12 @@ class Checkbox extends InputWidget {
 
         // Check if we have a model
         if ($this->hasModel()) {
+            // Add the Html::activeCheckbox to the HTML string
             $sHtml .= Html::activeCheckbox($this->model, $this->attribute, $this->options);
+            // Get the HTML attribute name
+            $this->name = Html::getInputName($this->model, $this->attribute);
         } else {
+            // Add the HTML::checkBox to the HTML string
             $sHtml .= Html::checkbox($this->name, $this->checked, $this->options);
         }
 
