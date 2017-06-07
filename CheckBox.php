@@ -6,7 +6,7 @@ use yii\bootstrap\Html;
 use yii\bootstrap\InputWidget;
 use yii\helpers\Json;
 
-class Checkbox extends InputWidget {
+class CheckBox extends InputWidget {
     /**
      * @var array The client options that will be passed to the LabelAuty widget
      */
