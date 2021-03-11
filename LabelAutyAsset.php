@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
 class LabelAutyAsset extends AssetBundle
 {
     // Set the base path
-    public $sourcePath = '@vendor/bower/labelauty/source/';
+    public $sourcePath = '@bower/labelauty/source/';
     // Register the CSS files
     public $css = [
         'jquery-labelauty.css',
